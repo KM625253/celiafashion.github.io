@@ -1,0 +1,448 @@
+/* Reset styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Universal font and font size */
+body {
+    font-family: 'Arial', sans-serif; /* Change to Arial font */
+    font-size: 18px; /* Adjusted font size */
+}
+
+
+/* Header styles */
+header {
+    width: 100%;
+    background-color: #34495e; /* Dark Blue */
+    height: 80px; /* Reduced height */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+
+/* Center the button and add spacing between sections */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vh 0; /* Add 1vh margin to top and bottom */
+}
+
+/* Logo styles */
+.logo img {
+    width: 60px; /* Reduced logo size */
+    height: 60px; /* Reduced logo size */
+    border-radius: 50%;
+    border: 3px solid #f39c12; /* Orange */
+    margin-right: 10px;
+}
+
+.logo p {
+    color: #ecf0f1; /* Light Gray */
+    font-size: 18px; /* Adjusted font size */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative; /* For hover effect */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1; /* Light Gray */
+    font-size: 18px; /* Adjusted font size */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #f39c12; /* Orange on hover */
+}
+
+/* Add animation to nav elements */
+nav ul li a {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Added margin for better separation */
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd; /* Light Gray border */
+}
+
+th {
+    background-color: #f2f2f2; /* Light Gray background for headers */
+}
+
+/* Add animation to table rows */
+tr {
+    transition: background-color 0.3s ease;
+}
+
+tr:hover {
+    background-color: #f9f9f9; /* Light Gray background on hover */
+}
+
+/* Additional styles for input text */
+input[type="text"],
+input[type="tel"],
+input[type="radio"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #bdc3c7; /* Light Gray */
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+    box-shadow: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="radio"]:focus {
+    border-color: #3498db; /* Blue */
+    outline: none;
+}
+
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder {
+    color: #95a5a6; /* Gray */
+}
+
+
+
+/* Button styles */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #f39c12; /* Orange */
+    color: #fff; /* White */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added drop shadow */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+button:hover {
+    background-color: #e67e22; /* Darker Orange on hover */
+}
+
+/* Additional input type number styles */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #bdc3c7; /* Light Gray */
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+    box-shadow: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #3498db; /* Blue */
+    outline: none;
+}
+
+input[type="number"]::placeholder {
+    color: #95a5a6; /* Gray */
+}
+
+/* Center the entire website */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Our Policy section styles */
+.policies {
+    width: 80%; /* Adjust width as needed */
+    margin-top: 50px; /* Add space from the top */
+}
+
+.policies h1 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+.policy {
+    margin-bottom: 30px; /* Add space between policy sections */
+    border: 1px solid #ddd; /* Add border to policy sections */
+    border-radius: 10px; /* Round the corners */
+    padding: 20px; /* Add padding */
+    background-color: #f9f9f9; /* Light Gray background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.policy h2 {
+    margin-bottom: 10px; /* Add space below policy headings */
+    color: #3498db; /* Blue color for headings */
+}
+
+.policy p {
+    text-align: justify; /* Justify policy text */
+    color: #333; /* Dark Gray color for text */
+    line-height: 1.6; /* Increase line height for readability */
+}
+
+/* Text section styles */
+.main-content {
+    width: 80%; /* Adjust width as needed */
+    text-align: center; /* Center the heading */
+    margin: 0 auto;
+    margin-bottom: 20px; /* Add space below the heading */
+    margin-top: 50px; /* Add space from the top */
+    text-align: center; /* Center align the text */
+    margin-bottom: 30px; /* Add space between policy sections */
+    border: 1px solid #ddd; /* Add border to policy sections */
+    border-radius: 10px; /* Round the corners */
+    padding: 20px; /* Add padding */
+    background-color: #f9f9f9; /* Light Gray background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.main-content .policy h2 {
+    margin-bottom: 10px; /* Add space below policy headings */
+    color: #3498db; /* Blue color for headings */
+}
+
+.main-content .policy p {
+    text-align: justify; /* Justify policy text */
+    color: #333; /* Dark Gray color for text */
+    line-height: 1.6; /* Increase line height for readability */
+}
+
+/* Styling for aside */
+aside {
+    background-color: #f9f9f9; /* Light Gray background */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Round the corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+    text-align: center; /* Center align the content */
+    margin-top: 20px; /* Add space from the top */
+}
+
+aside img {
+    width: 100px; /* Set image width */
+    height: 100px; /* Set image height */
+    margin-bottom: 10px; /* Add space below the images */
+}
+
+aside h1 {
+    color: #333; /* Dark Gray color for heading */
+    font-size: 18px; /* Adjust font size */
+    margin-bottom: 10px; /* Add space below the heading */
+}
+
+aside a {
+    display: inline-block; /* Make links display inline */
+    margin: 0 10px; /* Add space between links */
+}
+
+aside a img {
+    width: 30px; /* Set image width */
+    height: 30px; /* Set image height */
+    transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+aside a:hover img {
+    transform: scale(1.2); /* Scale up the image on hover */
+}
+
+/* Card container styles */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Card styles */
+.card {
+    width: 200px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+    text-align: center;
+    margin-right: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up the card on hover */
+}
+/* CSS for card label */
+.card h3 {
+    margin-top: 10px; /* Add spacing */
+    font-size: 18px; /* Adjust font size */
+}
+
+/* CSS for card price */
+.card p {
+    margin-bottom: 10px; /* Add spacing */
+    font-size: 16px; /* Adjust font size */
+    color: #888; /* Light gray color */
+}
+
+/* CSS for checkbox */
+.card input[type="checkbox"] {
+    margin: 5px auto; /* Center checkbox */
+}
+/* Image styles */
+.card-image {
+    width: 100%; /* Make the images fill the entire width of the card */
+    height: 80%; /* Set height to a percentage of the card height */
+    object-fit: cover; /* Maintain aspect ratio and cover entire space */
+    border-top-left-radius: 5px; /* Add border-radius for rounded corners */
+    border-top-right-radius: 5px; /* Add border-radius for rounded corners */
+
+}
+
+/* Checkbox styles */
+.card input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+/* Styling for the logo */
+.logo {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make it circular */
+    border: 2px solid #f39c12; /* Orange border */
+    margin-right: 10px; /* Add some space between the logo and other elements */
+}
+
+/* Additional styling for the header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #34495e; /* Dark Blue */
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between; /* Aligns items to the start and end edges of the main axis */
+    align-items: center; /* Aligns items vertically in the center */
+    
+}
+
+.main-content {
+    width: 60%; /* Adjust the width of the main content */
+}
+
+.big-logo {
+    width: 40%; /* Adjust the width as needed */
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 10%;
+    width: 100%;
+    background-color: #fff; /* Add background color if needed */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.fixed-bottom-footer {
+    position: fixed;
+    bottom: 4%;
+    width: 100%;
+    background-color: #fff; /* Add background color if needed */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+
+
+.social-menu ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.social-menu ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fab{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color: #000;
+}
+
+.social-menu ul li .fab:hover{
+    color: #fff;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: rgba(0, 0, 0, 0.829);
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #0077b5;
+}
+.social-menu ul li:nth-child(4) a:hover{
+    background-color: #0DC143;
+}

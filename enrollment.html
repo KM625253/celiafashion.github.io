@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll on our website</title>
+</head>
+<body>
+    <header>
+        <span>
+            <img class ="logo" src="logos/2.jpg" id="Image-0"/>
+
+        </span>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="enrollment.html">Enroll</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="delivery.html">Delivery</a></li>
+                <li><a href="our_policy.html">Our Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <form>
+            <table class = "enrollment-table" id="Table-1">
+                <thead>
+                    <tr>
+                        <th colspan="2">Personal Information</th>
+                    </tr>
+                </thead>
+                <thead id="Thead-1">
+                    <tr>
+                        <td>
+                            Full name:<input type="text" placeholder="Enter your full name" name="Full name" required id="Input-1"/>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody id="Tbody-1">
+                    <tr>
+                        <td>
+                            Age:<input type="number" placeholder="Enter your age" name="Age" required id="Input-2"/>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody id="Tbody-2">
+                    <tr>
+                        <td>
+                            Gender:
+                            <input type="radio" name="Gender" value="Male" id="Male"/>
+                            <label for="Male">Male</label>
+                            <input type="radio" name="Gender" value="Female" id="Female"/>
+                            <label for="Female">Female</label>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody id="Tbody-3">
+                    <tr>
+                        <td>
+                            Identity:<input type="text" placeholder="Enter your identity" name="Identity" required id="Input-3"/>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot id="Tfoot-1">
+                    <tr>
+                        <td>
+                            Hobby:<input type="text" placeholder="Enter your hobby" name="Hobby" required id="Input-4"/>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="button-container">
+                <button type="submit" class="Button">Send information</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
