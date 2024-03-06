@@ -139,6 +139,13 @@ input[type="tel"]::placeholder {
     margin-top: 20px; /* Adjust the margin as needed */
 }
 
+a{
+    text-decoration: none;
+    color: #ecf0f1; /* Light Gray */
+    font-size: 18px; /* Adjusted font size */
+    transition: color 0.3s ease; /* Smooth color transition */
+
+}
 
 button {
     padding: 10px 20px;
@@ -149,8 +156,8 @@ button {
     cursor: pointer;
     font-family: Arial, sans-serif;
     font-size: 16px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 10 px;
+    margin-top: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added drop shadow */
     transition: background-color 0.3s ease; /* Smooth color transition */
 }
